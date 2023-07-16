@@ -405,8 +405,14 @@ body .news_imagen1:before {
   position: absolute;
   background: -webkit-gradient(linear, right top, left top, from(rgba(10, 10, 10, 0.1)), to(#161616));
   background: linear-gradient(right, rgba(10, 10, 10, 0.1), #161616);
-  min-height: 95vh;
+  height: 100%;
   opacity: 0.2;
+}
+
+@media (max-width: 480px) {
+  body .news_imagen1:before {
+    height: 100%;
+  }
 }
 
 body .news_imagen1 h1 {
@@ -716,7 +722,7 @@ body .antes_del_footer {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 488px;
-    width: 365px;
+    width: 100%;
     margin: 0;
   }
 }
@@ -739,8 +745,8 @@ body .antes_del_footer div img {
 @media (max-width: 480px) {
   body .antes_del_footer div img {
     height: 130px;
-    width: 320px;
-    margin: 0;
+    width: 100%;
+    margin: 5px;
   }
 }
 
@@ -759,7 +765,7 @@ body .antes_del_footer .antes_del_footer1 {
 
 @media (max-width: 480px) {
   body .antes_del_footer .antes_del_footer1 {
-    width: 320px;
+    width: 100%;
     margin: 0;
   }
 }
@@ -1166,26 +1172,39 @@ body footer .footer_final a:hover {
   position: absolute;
   background: -webkit-gradient(linear, right top, left top, from(rgba(10, 10, 10, 0.1)), to(#161616));
   background: linear-gradient(right, rgba(10, 10, 10, 0.1), #161616);
-  min-height: 100vh;
+  height: 100%;
   opacity: 0.6;
 }
 
+@media (max-width: 480px) {
+  .pie_pagina_principal1:before {
+    height: 100%;
+  }
+}
+
 .pie_pagina_principal1 h1 {
-  font-size: 40px;
+  font-size: 44px;
   color: #fffcfc;
   font-family: 'Roboto', sans-serif;
   z-index: 1;
   margin: 0;
+  font-weight: 800;
 }
 
 .pie_pagina_principal1 p {
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
   color: #fffcfc;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   z-index: 1;
+}
+
+@media (max-width: 480px) {
+  .pie_pagina_principal1 p {
+    text-align: center;
+  }
 }
 
 .catalogo_1 {
@@ -1218,14 +1237,10 @@ body footer .footer_final a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   color: black;
-  height: 290px;
+  height: 330px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   background-color: white;
   margin-bottom: 50px;
@@ -1243,9 +1258,9 @@ body footer .footer_final a:hover {
 
 .catalogo_1 .movies a img {
   margin: 0;
-  padding: 25px 15px;
-  width: 170px;
-  height: 240px;
+  padding: 20px 15px;
+  width: 196px;
+  height: 301px;
   background-color: white;
 }
 
@@ -1260,20 +1275,32 @@ body footer .footer_final a:hover {
   color: #d61c12;
 }
 
-.catalogo_1 .movies p {
-  font-weight: 800;
-  font-size: 11px;
-  margin: 8px;
-  width: 150px;
+.catalogo_1 .movies div {
+  margin: 0;
 }
 
-.catalogo_1 .movies h6 {
-  margin: 0;
+.catalogo_1 .movies div p {
+  font-weight: 800;
+  font-size: 13px;
+  margin-top: 2px;
+  margin-left: 15px;
+  width: 170px;
+  height: 10px;
+}
+
+.catalogo_1 .movies div h6 {
+  margin-top: 15px;
+  padding: 10px;
+  margin-left: 5px;
   font-size: 15px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
   color: #514f4f;
+}
+
+.catalogo_1 .movies div h6:hover {
+  color: #d61c12;
 }
 
 .img_disney {
@@ -1573,8 +1600,13 @@ body footer .footer_final a:hover {
 
 @media (max-width: 480px) {
   .musica .musica_spotify {
-    width: 100px;
-    height: 280px;
+    margin-left: 30px;
+  }
+  .musica .musica_spotify iframe {
+    margin-left: 30px;
+    margin-top: 0;
+    width: 302px;
+    height: 450px;
     margin: 5px;
   }
 }
@@ -1585,9 +1617,16 @@ body footer .footer_final a:hover {
 
 @media (max-width: 480px) {
   .musica .musica_appl {
-    width: 144px;
-    height: 280px;
+    margin-top: 0;
+    width: 450px;
+    height: 302px;
     margin-bottom: 150px;
+    margin-left: 30px;
+  }
+  .musica .musica_appl iframe {
+    width: 302px;
+    height: 450px;
+    margin: 5px;
   }
 }
 
@@ -1618,8 +1657,14 @@ body footer .footer_final a:hover {
   position: absolute;
   background: -webkit-gradient(linear, right top, left top, from(rgba(10, 10, 10, 0.1)), to(#161616));
   background: linear-gradient(right, rgba(10, 10, 10, 0.1), #161616);
-  min-height: 100vh;
+  height: 100%;
   opacity: 0.6;
+}
+
+@media (max-width: 480px) {
+  .pie_pagina_principal_2:before {
+    height: 100%;
+  }
 }
 
 .pie_pagina_principal_2 h1 {
@@ -1649,6 +1694,15 @@ body footer .footer_final a:hover {
           justify-content: center;
 }
 
+@media (max-width: 480px) {
+  .catalogo_2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 .catalogo_2 .games {
   top: 0;
   margin: -35px 0;
@@ -1670,6 +1724,12 @@ body footer .footer_final a:hover {
   margin-bottom: 50px;
 }
 
+@media (max-width: 480px) {
+  .catalogo_2 .games {
+    margin: 5px;
+  }
+}
+
 .catalogo_2 .games a {
   margin: 0;
   border-bottom: none;
@@ -1678,9 +1738,16 @@ body footer .footer_final a:hover {
 .catalogo_2 .games a img {
   margin: 0;
   padding: 25px 15px;
-  width: 176px;
-  height: 215px;
+  width: 186px;
+  height: 230px;
   background-color: white;
+}
+
+@media (max-width: 480px) {
+  .catalogo_2 .games a img {
+    width: 160px;
+    height: 230px;
+  }
 }
 
 .catalogo_2 .games:hover {
@@ -1691,7 +1758,7 @@ body footer .footer_final a:hover {
   margin: 0;
   font-weight: 800;
   font-size: 13px;
-  width: 150px;
+  width: 186px;
 }
 
 .catalogo_2 .games div h6 {
