@@ -648,7 +648,7 @@ body .news_catalogo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 20px;
-    gap: 5px;
+    gap: 20px;
   }
 }
 
