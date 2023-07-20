@@ -83,6 +83,7 @@ body{
         .menu_nav{
             margin: 0;
             padding: 0;
+            
             @media(max-width :480px){
                 display: none;
             
@@ -97,19 +98,26 @@ body{
                 justify-content: center;
                 
                 
+                
+                
                 li{
                  list-style: none;
                  padding: 0;
                  margin: 0 20px;
                  letter-spacing: 1px;
                  z-index:2;
+                 animation: 300ms ease;
+                 
+                 
+                 
+
                  
                 
                     a{
                      text-decoration: none;
                      color: rgb(122, 123, 125);
                      letter-spacing: 1px;
-                     transition: all 1s;
+                     
                      
                         &:hover{
                             border-bottom:3px solid #db342a;
@@ -122,25 +130,25 @@ body{
                      display: none;
                      position: absolute;
                      background-color: white;
-                     transition: all 1s;
                      width: 100%;
+                     
                      
 
                       .footer_nav{
-                        display: flex;
-                        justify-content: center;
-                        a{ 
-                            color: #171616;
-                            font-weight: 800;
-                            margin: 10px;
-                            font-size: 11px;
-                            letter-spacing: 1px;
-                            &:hover{
-                                border-bottom:none;
-                                color: #e90c0c;  
+                            display: flex;
+                            justify-content: center;
+                            a{ 
+                                color: #171616;
+                                font-weight: 800;
+                                margin: 10px;
+                                font-size: 11px;
+                                letter-spacing: 1px;
+                                &:hover{
+                                    border-bottom:none;
+                                    color: #e90c0c;  
+                                }
                             }
                         }
-                      }
                         h2{ 
                             margin: 5px;
                             text-align: center;
@@ -153,7 +161,9 @@ body{
                         .guarda-cuadros{
                             display: flex;
                             flex-direction: row;
-                            justify-content: center; 
+                            justify-content: center;
+                            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+                            
                         }
                            
                         .newss{
@@ -165,6 +175,7 @@ body{
                             text-align: center;
                             justify-content: center;
                             margin: 10px;
+                            
                             
                             a{ 
                                 border-bottom: none;
@@ -410,22 +421,31 @@ body{
                flex-direction: row;
                @media(max-width :480px){
                flex-direction: column;
-               margin: 0 5px 0 5px ;
+               justify-content: center;
+                margin: 0;
                 }
                h2{
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
+                padding: 12px;
                }
                 div{
+                    width:600px ;
+                    @media(max-width :480px){
+                        margin:0 10px 0 10px;
+                        margin-left: 0px;
+                        width: 394px;
+                    }
+                    
                     
                     img{
                         height:337px ;
-                        width: 600px;
+                        width: 100%;
                         @media(max-width :480px){
-                            display: flex;
-                            margin: 0 15px;
-                            height:175px ;
-                            width: 280px;
+                            margin: 15px;
+                            height:221px ;
+                            
+                           
                         }
                     }
                 }
@@ -436,10 +456,12 @@ body{
                     justify-content: center;
                     @media(max-width :480px){
                         margin: 0;
+                        justify-content: center;
                     }
                     .news_info1{    
                         display: flex;
                         flex-direction: column;
+                        padding: 12px;
                         
                         
                         h5{
@@ -474,14 +496,20 @@ body{
         flex-direction: row;
         justify-content: center;
         @media(max-width :480px){
-           display: grid;
-           grid-template-columns: 1fr 1fr;
+           flex-wrap: wrap;
+           margin-top: 20px;
+           gap: 5px;
         }
         div{
             margin:15px 5px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @media(max-width :480px){
+               margin: 0;
+               width: 135px;
+               margin-top: 10px;
+            }
             iframe{
                 @media(max-width :480px){
                     height:76px ;
@@ -489,6 +517,10 @@ body{
                 }
             }
             a{
+                @media(max-width :480px){
+                    
+                    width: 135px;
+                }
                 img{
                     height: 281px;
                     width: 393px;
@@ -507,6 +539,9 @@ body{
                 margin: 5px;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
+                @media(max-width :480px){
+                    width: 135px;
+                }
             }
             p{
                 margin: 0;
@@ -519,7 +554,7 @@ body{
                 font-weight: 400;
                 @media(max-width :480px){
                     width:135px ;
-                    
+                    height: 100px;
                 }
                 &:hover{
                     color: #cd2a2a; 
@@ -561,13 +596,14 @@ body{
         }
         .antes_del_footer1{
             height: 340px;
-            width: 570px;
+            width: 100%;
             color: #f7f0f0;
             display: flex;
             flex-direction: column;
             @media(max-width :480px){
                 width: 100%;
                 margin: 0;
+                justify-content: center;
             }
             
             h4{
@@ -597,8 +633,9 @@ body{
 
                 @media(max-width :480px){
                 height: 130px;
-                width: 320px;
+                width: 100%;
                 margin: 0;
+                    align-items: center;
                 }
                 
             }
@@ -664,6 +701,12 @@ body{
 
                 .footer_img{
                     margin-left: 100px;
+                    @media(max-width :480px){
+                        display: flex;
+                        justify-content: center;
+                        margin-left: 0;
+                        width: 100%;
+                    }
                     
                     img{
                         height: 120px;
@@ -676,11 +719,20 @@ body{
                 }
                 .footer_parte1{
                     margin: 0;
+                    @media(max-width :480px){
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
                     ul{
                         padding: 0;
                         margin: 0;
                         text-align:left;
                         margin-left: 15px;
+                        @media(max-width :480px){
+                            text-align: center;
+                            margin-left: 0;
+                        }
                         li{
                             list-style: none;
                             margin: 12px;
@@ -699,10 +751,17 @@ body{
                 }
                 .footer_parte2_de_1{
                     width: 200px;
+                    @media(max-width :480px){
+                        width: 100%;
+
+                    }
                     ul{
                         padding: 0;
                         margin: 0;
                         text-align: left;
+                        @media(max-width :480px){
+                            text-align: center;
+                        }
                         li{
                             list-style: none;
                             margin: 12px;
@@ -1407,3 +1466,33 @@ body{
         }
     }
 }
+    //contactos//
+.contactos{
+    background-image: url(https://cdn.marvel.com/content/1x/secretinvasion_lob_mas_min_dsk_01.jpg);
+    background-size: 100% 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    .formulario_img{
+        margin-top: 40px;
+        background-repeat: no-repeat;
+        background-image: url(https://m.media-amazon.com/images/I/51SF3qlVFYL._AC_SY741_.jpg);
+        background-size: 100% 100%;
+        width: 500px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        @media(max-width :480px){
+            width: 400px;
+            
+        }
+       
+        .formulario_general{
+            margin-top: 140px;
+           margin-left: 20px;
+         
+        }
+    }   
+}  

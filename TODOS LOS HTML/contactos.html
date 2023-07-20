@@ -12,10 +12,6 @@
 <body>
     <header>
 
-
-
-
-
       <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -320,59 +316,68 @@
       </header>
   
      
-    <div>
-        <table>
-            <fieldset>
-                <form action="formulacio">
-                    <legend>Datos personales</legend>
-                    <div>
-                        <label for="nombre">nombre</label>
-                        <input type="text" id="nombre" placeholder="ingrese su nombre"required>
-
-                        <label for="apellido">apellido</label>  
-                        <input type="text" id="apellido" placeholder="ingrese su apellido"required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="mail">mail</label>
-                        <input type="email" id="mail" placeholder="email"required>
-
+    <div class="contactos">
+      <div class="formulario_img">
+        <div class="formulario_general">
+          <table>
+              <fieldset>
+                  <form action="formulario">
+                      <div>
+                          <label for="nombre">Nombre</label>
+                          <input type="text" id="nombre" placeholder="ingrese su nombre"required>   
+                      </div>
+                      
+                      <div>
+                         <label for="apellido">Apellido</label>  
+                         <input type="text" id="apellido" placeholder="ingrese su apellido"required>
+                      </div>
+                      <br>
+                      <div>
+                          <label for="mail">mail</label>
+                          <input type="email" id="mail" placeholder="email"required>
+                      </div>
+                      <div>
                         <label for="clave">passwoed</label>
                         <input type="password" id="clave" placeholder="ingrese su clave"required>
-                    </div>
-                    <div>
-                        <input type="radio" name="sexo" value="1">hombre 
-                        <input type="radio" name="sexo" value="2">mujer
-                        <input type="radio" name="sexo" value="3">omitir
-                    </div>
-                    <div>
-                        <h5>Foto de ci</h5>
-                        <input type="file">
-                    </div>
-                    <h5>De que pais te comunicas:</h5>
+                      </div>
+                      <br>
+                      <div>
+                          <input type="radio" name="sexo" value="1">hombre 
+                          <input type="radio" name="sexo" value="2">mujer
+                          <input type="radio" name="sexo" value="3">omitir
+                      </div>
+                      <br>
+                      <div>
+                          <h5>Foto de ci</h5>
+                          <input type="file">
+                      </div>
+                      <h5>Pais:</h5>
 
-                    <select name="paises" id="paises">
-                        <option value="0">Paises</option>
-                        <option value="1">Argentina</option>
-                        <option value="2">Brasil</option>
-                        <option value="3">Chile</option>
-                        <option value="4">Paraguay</option>
-                        <option value="5">Peru</option>
-                        <option value="6">Uruguay</option>
-                    </select>
+                      <select name="paises" id="paises">
+                          <option value="0">Paises</option>
+                          <option value="1">Argentina</option>
+                          <option value="2">Brasil</option>
+                          <option value="3">Chile</option>
+                          <option value="4">Paraguay</option>
+                          <option value="5">Peru</option>
+                          <option value="6">Uruguay</option>
+                      </select>
 
-                    <br>
-                    <br>
+                      <br>
+                      <br>
 
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar todo">
-                </form>
+                      <input type="submit" value="Enviar">
+                      <input type="reset" value="Borrar todo">
+                  </form>
 
-            </fieldset>
-            
+              </fieldset>
+              
 
-        </table>
+          </table>
+        </div> 
+      </div>
     </div>
+
     <footer>
       <div class="footer_completo">
         <div class="footer1">
