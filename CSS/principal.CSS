@@ -565,7 +565,7 @@ body .news_contenedores .news_noticia1 div img {
 
 @media (max-width: 480px) {
   body .news_contenedores .news_noticia1 div img {
-    margin: 15px;
+    padding: 15px;
     height: 221px;
   }
 }
@@ -648,7 +648,9 @@ body .news_catalogo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 20px;
-    gap: 20px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
@@ -671,6 +673,7 @@ body .news_catalogo div {
     margin: 0;
     width: 135px;
     margin-top: 10px;
+    margin-left: 40px;
   }
 }
 
@@ -731,6 +734,8 @@ body .news_catalogo div p {
   body .news_catalogo div p {
     width: 135px;
     height: 100px;
+    font-size: 14px;
+    font-weight: 1000;
   }
 }
 
@@ -783,7 +788,7 @@ body .antes_del_footer div img {
   body .antes_del_footer div img {
     height: 130px;
     width: 100%;
-    margin: 5px;
+    margin: 0;
   }
 }
 
@@ -1336,7 +1341,11 @@ body footer .footer_final a:hover {
 
 @media (max-width: 480px) {
   .catalogo_1 .movies {
-    margin: 5px;
+    margin: 0;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1356,6 +1365,7 @@ body footer .footer_final a:hover {
   .catalogo_1 .movies a img {
     width: 160px;
     height: 230px;
+    padding: 0;
   }
 }
 
@@ -1367,6 +1377,13 @@ body footer .footer_final a:hover {
   margin: 0;
 }
 
+@media (max-width: 480px) {
+  .catalogo_1 .movies div {
+    width: 160px;
+    height: 50px;
+  }
+}
+
 .catalogo_1 .movies div p {
   font-weight: 800;
   font-size: 13px;
@@ -1374,6 +1391,14 @@ body footer .footer_final a:hover {
   margin-left: 15px;
   width: 170px;
   height: 10px;
+}
+
+@media (max-width: 480px) {
+  .catalogo_1 .movies div p {
+    width: 100%;
+    font-size: 10px;
+    margin-left: 0;
+  }
 }
 
 .catalogo_1 .movies div h6 {
@@ -1389,6 +1414,12 @@ body footer .footer_final a:hover {
 
 .catalogo_1 .movies div h6:hover {
   color: #d61c12;
+}
+
+@media (max-width: 480px) {
+  .catalogo_1 .movies div h6 {
+    padding: 0;
+  }
 }
 
 .img_disney {
@@ -1409,8 +1440,21 @@ body footer .footer_final a:hover {
   height: 400px;
 }
 
+@media (max-width: 480px) {
+  .img_disney {
+    width: 100%;
+  }
+}
+
 .img_disney div {
   margin-left: 100px;
+}
+
+@media (max-width: 480px) {
+  .img_disney div {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .img_disney div img {
@@ -1534,7 +1578,7 @@ body footer .footer_final a:hover {
 
 @media (max-width: 480px) {
   .todas_las_movies {
-    margin: 5px;
+    margin: 0;
   }
 }
 
@@ -1573,7 +1617,8 @@ body footer .footer_final a:hover {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    margin: 5px;
+    margin: 0;
+    padding: 5;
   }
 }
 
@@ -1592,6 +1637,15 @@ body footer .footer_final a:hover {
           justify-content: center;
   background-color: white;
   margin: 15px 5px;
+}
+
+@media (max-width: 480px) {
+  .todas_las_movies .t_movies .tm_movies {
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .todas_las_movies .t_movies .tm_movies a img {
@@ -1616,7 +1670,17 @@ body footer .footer_final a:hover {
   }
 }
 
-.todas_las_movies .t_movies .tm_movies h6 {
+.todas_las_movies .t_movies .tm_movies div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.todas_las_movies .t_movies .tm_movies div h6 {
   margin: 0;
   font-size: 15px;
   -webkit-box-pack: left;
@@ -1625,11 +1689,11 @@ body footer .footer_final a:hover {
   color: #514f4f;
 }
 
-.todas_las_movies .t_movies .tm_movies:hover {
+.todas_las_movies .t_movies .tm_movies div:hover {
   color: #d61c12;
 }
 
-.todas_las_movies .t_movies .tm_movies p {
+.todas_las_movies .t_movies .tm_movies div p {
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 12px;
@@ -1669,6 +1733,7 @@ body footer .footer_final a:hover {
 
 @media (max-width: 480px) {
   .musica {
+    margin-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1695,7 +1760,7 @@ body footer .footer_final a:hover {
     margin-top: 0;
     width: 302px;
     height: 450px;
-    margin: 5px;
+    margin: 0;
   }
 }
 
@@ -1706,7 +1771,7 @@ body footer .footer_final a:hover {
 @media (max-width: 480px) {
   .musica .musica_appl {
     margin-top: 0;
-    width: 450px;
+    width: 100px;
     height: 302px;
     margin-bottom: 150px;
     margin-left: 30px;
@@ -1774,6 +1839,12 @@ body footer .footer_final a:hover {
   z-index: 1;
 }
 
+@media (max-width: 480px) {
+  .pie_pagina_principal_2 p {
+    text-align: center;
+  }
+}
+
 .catalogo_2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1815,7 +1886,11 @@ body footer .footer_final a:hover {
 
 @media (max-width: 480px) {
   .catalogo_2 .games {
-    margin: 5px;
+    margin: 0;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1836,11 +1911,19 @@ body footer .footer_final a:hover {
   .catalogo_2 .games a img {
     width: 160px;
     height: 230px;
+    padding: 0;
   }
 }
 
 .catalogo_2 .games:hover {
   color: #d61c12;
+}
+
+@media (max-width: 480px) {
+  .catalogo_2 .games div {
+    width: 160px;
+    height: 50px;
+  }
 }
 
 .catalogo_2 .games div p {
@@ -1850,10 +1933,24 @@ body footer .footer_final a:hover {
   width: 186px;
 }
 
+@media (max-width: 480px) {
+  .catalogo_2 .games div p {
+    width: 100%;
+    font-size: 10px;
+    margin-left: 0;
+  }
+}
+
 .catalogo_2 .games div h6 {
   margin: 0;
   font-size: 15px;
   color: #514f4f;
+}
+
+@media (max-width: 480px) {
+  .catalogo_2 .games div h6 {
+    padding: 0;
+  }
 }
 
 .todas_los_games {
