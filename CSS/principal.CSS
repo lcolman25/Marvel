@@ -648,14 +648,16 @@ body .news_catalogo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 20px;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 20px;
+    height: 400px;
   }
 }
 
 body .news_catalogo div {
-  margin: 15px 5px;
+  margin: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,23 +672,27 @@ body .news_catalogo div {
 
 @media (max-width: 480px) {
   body .news_catalogo div {
-    margin: 0;
-    width: 135px;
+    margin-bottom: 25px;
+    width: 185px;
     margin-top: 10px;
-    margin-left: 40px;
+    margin: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media (max-width: 480px) {
   body .news_catalogo div iframe {
-    height: 76px;
-    width: 135px;
+    height: 104px;
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   body .news_catalogo div a {
-    width: 135px;
+    height: 104px;
+    width: 100%;
   }
 }
 
@@ -697,12 +703,18 @@ body .news_catalogo div a img {
 
 @media (max-width: 480px) {
   body .news_catalogo div a img {
-    height: 76px;
-    width: 135px;
+    height: 104px;
+    width: 100%;
   }
 }
 
-body .news_catalogo div h4 {
+body .news_catalogo div div {
+  margin-top: 30px;
+  height: 25px;
+  margin-bottom: 30px;
+}
+
+body .news_catalogo div div h4 {
   margin: 0;
   color: #797474;
   font-size: 12px;
@@ -712,34 +724,32 @@ body .news_catalogo div h4 {
 }
 
 @media (max-width: 480px) {
-  body .news_catalogo div h4 {
-    width: 135px;
+  body .news_catalogo div div h4 {
+    width: 185px;
   }
 }
 
-body .news_catalogo div p {
+body .news_catalogo div div p {
   margin: 0;
   color: #171616;
   font-weight: 800;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   width: 410px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  height: 281px;
 }
 
 @media (max-width: 480px) {
-  body .news_catalogo div p {
-    width: 135px;
-    height: 100px;
+  body .news_catalogo div div p {
+    width: 185px;
+    height: 100%;
     font-size: 14px;
     font-weight: 1000;
+    margin-bottom: 20px;
   }
 }
 
-body .news_catalogo div p:hover {
+body .news_catalogo div div p:hover {
   color: #cd2a2a;
 }
 
@@ -1238,7 +1248,7 @@ body footer .footer_final a:hover {
 }
 
 .pie_pagina_principal1 {
-  background-image: url(https://cdn.marvel.com/content/1x/guardiansofthegalaxyvol3_lob_mas_min_dsk_01.jpg);
+  background-image: url(https://cdn.marvel.com/content/1x/themarvels_lob_mas_min_dsk_01.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1257,6 +1267,15 @@ body footer .footer_final a:hover {
   background-position: center;
 }
 
+@media (max-width: 480px) {
+  .pie_pagina_principal1 {
+    background-image: url(https://cdn.marvel.com/content/1x/themarvels_lob_mas_min_mob_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .pie_pagina_principal1:before {
   content: "";
   width: 100%;
@@ -1271,7 +1290,7 @@ body footer .footer_final a:hover {
 
 @media (max-width: 480px) {
   .pie_pagina_principal1:before {
-    height: 100%;
+    height: 515px;
   }
 }
 
@@ -1801,6 +1820,15 @@ body footer .footer_final a:hover {
   height: 400px;
   width: 100%;
   background-position: center;
+}
+
+@media (max-width: 480px) {
+  .pie_pagina_principal_2 {
+    background-image: url(https://cdn.marvel.com/content/1x/marvelsspiderman2_lob_mas_min_mob_01.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 340px;
+  }
 }
 
 .pie_pagina_principal_2:before {
