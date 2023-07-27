@@ -2145,3 +2145,313 @@ body footer .footer_final a:hover {
   margin-top: 140px;
   margin-left: 20px;
 }
+
+.comics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.comics .comics_titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: black;
+  width: 1160px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.comics .comics_titulo h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+@media (max-width: 480px) {
+  .comics .comics_titulo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+.comics .comics_Contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .comics .comics_Contenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    margin-bottom: 0;
+  }
+}
+
+.comics .comics_Contenedor .comics_caja a img {
+  width: 224px;
+  height: 336px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  -webkit-transition: all 80ms;
+  transition: all 80ms;
+}
+
+.comics .comics_Contenedor .comics_caja a img:hover {
+  -webkit-transform: translate(0rem, -1ex);
+          transform: translate(0rem, -1ex);
+}
+
+@media (max-width: 480px) {
+  .comics .comics_Contenedor .comics_caja a img {
+    width: 192px;
+    height: 288px;
+  }
+}
+
+.comics .comics_Contenedor .comics_caja div {
+  width: 224px;
+  margin-top: 20px;
+}
+
+.comics .comics_Contenedor .comics_caja div h2 {
+  font-size: 15px;
+}
+
+.comics .comics_Contenedor .comics_caja div h2:hover {
+  color: red;
+}
+
+.comics .comics_Contenedor .comics_caja div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.comics .comics_Contenedor .comics_caja div div a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.comics .comics_Contenedor .comics_caja div div a:hover {
+  color: red;
+}
+
+@media (max-width: 480px) {
+  .comics .comics_Contenedor .comics_caja div {
+    width: 192px;
+    margin-bottom: 0px;
+  }
+}
+
+.comics .comics_Contenedor .comics_caja_ultimo a img {
+  width: 224px;
+  height: 336px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  -webkit-transition: all 80ms;
+  transition: all 80ms;
+}
+
+.comics .comics_Contenedor .comics_caja_ultimo a img:hover {
+  -webkit-transform: translate(0rem, -1ex);
+          transform: translate(0rem, -1ex);
+}
+
+@media (max-width: 480px) {
+  .comics .comics_Contenedor .comics_caja_ultimo a img {
+    width: 192px;
+    height: 288px;
+  }
+}
+
+.comics .comics_Contenedor .comics_caja_ultimo div {
+  width: 224px;
+  margin-top: 10px;
+}
+
+.comics .comics_Contenedor .comics_caja_ultimo div h2 {
+  font-size: 17px;
+}
+
+.comics .comics_Contenedor .comics_caja_ultimo div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.comics .comics_Contenedor .comics_caja_ultimo div div a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.comics .comics_Contenedor .comics_caja_ultimo div div a:hover {
+  color: red;
+}
+
+@media (max-width: 480px) {
+  .comics .comics_Contenedor .comics_caja_ultimo {
+    display: none;
+  }
+}
+
+.comics .comics_button button {
+  background: red;
+  color: white;
+  height: 40px;
+}
+
+.comics {
+  width: 100%;
+}
+
+.comics h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .comics h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.comics #carouselExampleControls .carousel-inner .carousel-item .comics_Contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comics #carouselExampleControls .carousel-inner .carousel-item .comics_Contenedor .comics_caja {
+  background-color: #ffffff;
+}
+
+.comics #carouselExampleControls .carousel-inner .carousel-item .comics_Contenedor .comics_caja a img {
+  width: 224px;
+  height: 336px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-transition: all 80ms;
+  transition: all 80ms;
+}
+
+.comics #carouselExampleControls .carousel-inner .carousel-item .comics_Contenedor .comics_caja a img:hover {
+  -webkit-transform: translate(0rem, -1ex);
+          transform: translate(0rem, -1ex);
+}
+
+.comics #carouselExampleControls .carousel-inner .carousel-item .comics_Contenedor .comics_caja div {
+  width: 224px;
+  margin-top: 10px;
+}
+
+.comics #carouselExampleControls .carousel-inner .carousel-item .comics_Contenedor .comics_caja div h2 {
+  font-size: 15px;
+}
+
+.comics #carouselExampleControls .carousel-inner .carousel-item .comics_Contenedor .comics_caja div h2:hover {
+  color: red;
+}
+
+@media (max-width: 480px) {
+  .comics #carouselExampleControls {
+    display: none;
+  }
+}
+
+.comics .comics_mv {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .comics .comics_mv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  .comics .comics_mv .comics_caja {
+    width: 192px;
+  }
+  .comics .comics_mv .comics_caja a img {
+    height: 288px;
+    width: 100%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    -webkit-transition: all 80ms;
+    transition: all 80ms;
+  }
+  .comics .comics_mv .comics_caja a img:hover {
+    -webkit-transform: translate(0rem, -1ex);
+            transform: translate(0rem, -1ex);
+  }
+  .comics .comics_mv .comics_caja div {
+    margin-top: 10px;
+  }
+  .comics .comics_mv .comics_caja div a {
+    text-decoration: none;
+  }
+  .comics .comics_mv .comics_caja div a h2 {
+    font-size: 15px;
+  }
+  .comics .comics_mv .comics_caja div a h2:hover {
+    color: red;
+  }
+}

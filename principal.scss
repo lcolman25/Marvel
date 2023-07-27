@@ -1588,3 +1588,275 @@ body{
         }
     }   
 }  
+.comics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .comics_titulo{
+        display: flex;
+        justify-content: left;
+        color: black;
+        width: 1160px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+        }
+        @media(max-width :480px){
+            justify-content: center;
+            width: 100%;
+                
+    
+        }
+    }
+    .comics_Contenedor{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        @media(max-width :480px){
+           display: grid;
+           grid-template-columns:1fr 1fr ;
+           grid-template-rows: 1fr ;
+           margin-bottom: 0;
+        }
+        .comics_caja{
+            
+            a{
+                img{
+                    width:224px ;
+                    height: 336px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                    transition: all 80ms;
+                    &:hover{
+                        transform:translate(0rem , -1ex);
+                        
+                    }
+                    @media(max-width :480px){
+                        width:192px ;
+                       height: 288px;
+                    }
+                }
+            }
+            div{ 
+                width:224px ;
+                margin-top: 20px;
+                h2{
+                    font-size: 15px;
+                    &:hover{
+                        color: red;
+                    }
+                }
+               div{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2px;
+                    margin-bottom: 20px;
+                    
+                    a{
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 10px;
+                        text-decoration: none;
+                        color: #000;
+                        
+                        
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+
+                @media(max-width :480px){
+                    width:192px ;
+                   margin-bottom: 0px;
+                }
+            }
+
+           
+        }
+
+        .comics_caja_ultimo{
+            a{
+                img{
+                    width:224px ;
+                    height: 336px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                    transition: all 80ms;
+                    &:hover{
+                        transform:translate(0rem , -1ex);
+                        
+                    }
+                    @media(max-width :480px){
+                        width:192px ;
+                       height: 288px;
+                    }
+                }
+            }
+            div{ 
+                width:224px ;
+                margin-top: 10px;
+                h2{
+                    font-size: 17px;
+                   
+                }
+               div{
+                
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2px;
+                    margin-bottom: 10px;
+                    
+                    a{
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 10px;
+                        text-decoration: none;
+                        color: #000;
+                        
+                        
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+
+               
+            }
+            @media(max-width :480px){
+                display: none;
+               
+            }
+            
+        }
+       
+
+    }
+    .comics_button{
+        button{
+            background: red;
+            color: white;
+            height: 40px;
+        }
+
+    }
+   
+   
+}
+.comics{
+    h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: black;
+        @media(max-width :480px){
+            display: flex;
+                
+    
+        }
+    }
+    width: 100%;
+    
+    
+    #carouselExampleControls{
+        .carousel-inner{
+            .carousel-item{
+                .comics_Contenedor{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    justify-content: center;
+                    .comics_caja{
+                        background-color: #ffffff;
+                        
+                                
+                        a{
+                            
+                            img{
+                                width:224px ;
+                                height: 336px;
+                                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                                transition: all 80ms;
+                                &:hover{
+                                    transform:translate(0rem , -1ex);
+                                            
+                                }
+                            }
+                        }
+                        div{ 
+                            width:224px ;
+                            margin-top: 10px;
+                            
+                                
+                            h2{
+                                font-size: 15px;
+                                &:hover{
+                                    color: red;
+                                }   
+                            }
+                                
+                                
+                        }
+                    }
+                }
+
+            }
+           
+        }   
+        
+        @media(max-width :480px){
+            display: none;
+                
+    
+        }
+        
+    } 
+    
+    
+   .comics_mv{
+     display: none;
+    
+        @media(max-width :480px){
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 30px;
+            .comics_caja{
+                width: 192px;
+                
+                a{
+                    img{
+                        height: 288px;
+                        width: 100%;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                        transition: all 80ms;
+                        &:hover{
+
+                            transform:translate(0rem , -1ex);
+                                            
+                        }
+                    }
+                }
+                div{
+                    margin-top: 10px;
+
+                    a{
+                        text-decoration: none;
+                        h2{
+                            font-size: 15px;
+                            &:hover{
+                                color: red;                
+                            }
+                        }
+                            
+                    }   
+                }
+            }
+                
+
+        }
+    } 
+    
+}
