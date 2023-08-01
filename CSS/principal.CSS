@@ -2391,6 +2391,41 @@ body footer .footer_final a:hover {
   width: 20px;
 }
 
+.comics .comics_titulo h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.comics .comics_titulo h3:before {
+  margin-left: 58px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.comics .comics_titulo h3:after {
+  margin-top: 50px;
+  margin-left: 15px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
 @media (max-width: 480px) {
   .comics .comics_titulo {
     -webkit-box-pack: center;
@@ -2450,6 +2485,7 @@ body footer .footer_final a:hover {
 }
 
 .comics .comics_Contenedor .comics_caja div h2 {
+  color: #000;
   font-size: 15px;
 }
 
@@ -2688,6 +2724,7 @@ body footer .footer_final a:hover {
   }
   .comics .comics_mv .comics_caja div a {
     text-decoration: none;
+    color: #000;
   }
   .comics .comics_mv .comics_caja div a h2 {
     font-size: 15px;

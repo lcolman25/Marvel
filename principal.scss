@@ -1778,6 +1778,35 @@ body{
                 width: 20px;
             }
         }
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            &:before{
+                margin-left: 58px;
+                transform-origin: left bottom;
+                background-color: #c6a972;
+                content: "";
+                display: block;
+                height: 2px;
+                position: absolute;
+                transform: rotate(-45deg) skewX(45deg);
+                width: 20px;
+            }
+            &:after{
+                margin-top: 50px;
+                margin-left: 15px;
+                transform-origin: left bottom;
+                background-color: #c6a972;
+                content: "";
+                display: block;
+                height: 2px;
+                position: absolute;
+                transform: rotate(-45deg) skewX(45deg);
+                width: 20px;
+            }
+
+        }
         @media(max-width :480px){
             justify-content: center;
             width: 100%;
@@ -1817,11 +1846,13 @@ body{
                 width:224px ;
                 margin-top: 20px;
                 h2{
+                    color: #000;
                     font-size: 15px;
                     &:hover{
                         color: red;
                     }
                 }
+               
                div{
                     display: flex;
                     flex-direction: row;
@@ -2040,10 +2071,11 @@ body{
 
                     a{
                         text-decoration: none;
+                        color: #000;
                         h2{
                             font-size: 15px;
                             &:hover{
-                                color: red;                
+                                color: red               
                             }
                         }
                             
