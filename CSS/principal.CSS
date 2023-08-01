@@ -71,10 +71,16 @@ body header .menu .contenedor1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+body header .menu .contenedor1 a {
+  width: 120px;
 }
 
 body header .menu .contenedor1 a img {
-  width: 120px;
+  width: 100%;
 }
 
 body header .menu .contenedor2 {
@@ -92,6 +98,16 @@ body header .menu .contenedor2 {
   color: aliceblue;
   font-size: 10px;
   letter-spacing: 1px;
+  gap: 10px;
+}
+
+body header .menu .contenedor2 img {
+  height: 30px;
+  width: 30px;
+}
+
+body header .menu .contenedor2 p {
+  margin-top: 10px;
 }
 
 body header hr {
@@ -544,17 +560,50 @@ body .news_contenedores .news_noticia1 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   padding: 12px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .news_contenedores .news_noticia1 h2:before {
+  margin-left: 58px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+body .news_contenedores .news_noticia1 h2:after {
+  margin-top: 15px;
+  margin-left: 5px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
 }
 
 body .news_contenedores .news_noticia1 div {
-  width: 600px;
+  width: 100%;
 }
 
 @media (max-width: 480px) {
   body .news_contenedores .news_noticia1 div {
     margin: 0 10px 0 10px;
     margin-left: 0px;
-    width: 394px;
   }
 }
 
@@ -571,7 +620,7 @@ body .news_contenedores .news_noticia1 div img {
 }
 
 body .news_contenedores .news_noticia1 .news_info {
-  margin: 10px;
+  margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,6 +702,7 @@ body .news_catalogo {
             justify-content: flex-start;
     margin-left: 20px;
     height: 400px;
+    margin-bottom: 100px;
   }
 }
 
@@ -1229,22 +1279,25 @@ body footer .footer_final a:hover {
           align-items: center;
   margin: 0;
   padding: 0;
-  height: 45px;
+  height: 40px;
   background: #000;
+  z-index: 2;
 }
 
 .movie_comienzo p {
+  margin-top: 20px;
   color: white;
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .movie_comienzo img {
   margin: 0 8px;
   color: white;
-  height: 42px;
+  height: 100%;
   width: 60px;
+  z-index: 2;
 }
 
 .pie_pagina_principal1 {
@@ -1521,6 +1574,42 @@ body footer .footer_final a:hover {
 .things_part1 h2 {
   font-family: 'Roboto', sans-serif;
   margin-left: 100px;
+  margin-top: 30px;
+}
+
+@media (max-width: 480px) {
+  .things_part1 h2 {
+    margin-left: 50px;
+  }
+}
+
+.things_part1 h2:before {
+  margin-left: 58px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.things_part1 h2:after {
+  margin-top: 15px;
+  margin-left: 15px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
 }
 
 .things_part1 .new_things {
@@ -1615,6 +1704,35 @@ body footer .footer_final a:hover {
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+}
+
+.todas_las_movies .titulo_movies h2:before {
+  margin-left: 58px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.todas_las_movies .titulo_movies h2:after {
+  margin-top: 15px;
+  margin-left: 15px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
 }
 
 .todas_las_movies .t_movies {
@@ -1768,6 +1886,42 @@ body footer .footer_final a:hover {
   font-weight: 300;
   font-size: 17px;
   margin-left: 110px;
+}
+
+.musica .musica_spotify h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.musica .musica_spotify h2:before {
+  margin-left: 58px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.musica .musica_spotify h2:after {
+  margin-top: 15px;
+  margin-left: 15px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
 }
 
 @media (max-width: 480px) {
@@ -2008,6 +2162,35 @@ body footer .footer_final a:hover {
   font-weight: 500;
 }
 
+.todas_los_games .titulo_games h2:before {
+  margin-left: 58px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.todas_los_games .titulo_games h2:after {
+  margin-top: 15px;
+  margin-left: 15px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
 .todas_los_games .t_games {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2179,6 +2362,35 @@ body footer .footer_final a:hover {
   font-size: 30px;
 }
 
+.comics .comics_titulo h1:before {
+  margin-left: 58px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.comics .comics_titulo h1:after {
+  margin-top: 15px;
+  margin-left: 15px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
 @media (max-width: 480px) {
   .comics .comics_titulo {
     -webkit-box-pack: center;
@@ -2346,15 +2558,44 @@ body footer .footer_final a:hover {
   width: 100%;
 }
 
-.comics h2 {
+.comics h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 30px;
   color: black;
 }
 
+.comics h3:before {
+  margin-left: 58px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.comics h3:after {
+  margin-top: 15px;
+  margin-left: 15px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
 @media (max-width: 480px) {
-  .comics h2 {
+  .comics h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
