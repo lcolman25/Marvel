@@ -20,7 +20,7 @@ body header .navbar {
   display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body header .navbar {
     display: block;
     z-index: 1;
@@ -41,7 +41,7 @@ body header .menu {
       grid-template-columns: 1fr 3fr 1fr;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body header .menu {
     display: none;
   }
@@ -121,7 +121,7 @@ body header .menu_nav {
   padding: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body header .menu_nav {
     display: none;
   }
@@ -556,6 +556,19 @@ body .news_contenedores .news_noticia1 {
   }
 }
 
+@media (max-width: 768px) {
+  body .news_contenedores .news_noticia1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+}
+
 body .news_contenedores .news_noticia1 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -612,6 +625,14 @@ body .news_contenedores .news_noticia1 div img {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  body .news_contenedores .news_noticia1 div img {
+    padding: 15px;
+    width: 359px;
+    height: 203px;
+  }
+}
+
 @media (max-width: 480px) {
   body .news_contenedores .news_noticia1 div img {
     padding: 15px;
@@ -653,6 +674,18 @@ body .news_contenedores .news_noticia1 .news_info .news_info1 {
   padding: 12px;
 }
 
+@media (max-width: 768px) {
+  body .news_contenedores .news_noticia1 .news_info .news_info1 {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body .news_contenedores .news_noticia1 .news_info .news_info1 {
+    margin-bottom: 60px;
+  }
+}
+
 body .news_contenedores .news_noticia1 .news_info .news_info1 h5 {
   color: #808080;
   margin: 0;
@@ -670,6 +703,13 @@ body .news_contenedores .news_noticia1 .news_info .news_info1 p {
           justify-content: space-between;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  body .news_contenedores .news_noticia1 .news_info .news_info1 p {
+    font-size: 20px;
+    font-weight: 800;
+  }
 }
 
 body .news_contenedores .news_noticia1 .news_info div a {
@@ -690,6 +730,7 @@ body .news_catalogo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10px;
 }
 
 @media (max-width: 480px) {
@@ -702,7 +743,14 @@ body .news_catalogo {
             justify-content: flex-start;
     margin-left: 20px;
     height: 400px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  body .news_catalogo {
+    gap: 10px;
+    height: 300px;
   }
 }
 
@@ -720,15 +768,35 @@ body .news_catalogo div {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  body .news_catalogo div {
+    height: 131px;
+    width: 233px;
+    margin-top: 100px;
+  }
+}
+
 @media (max-width: 480px) {
   body .news_catalogo div {
     margin-bottom: 25px;
-    width: 185px;
+    width: 171px;
     margin-top: 10px;
     margin: 5px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+body .news_catalogo div iframe {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+@media (max-width: 768px) {
+  body .news_catalogo div iframe {
+    height: 131px;
+    width: 233px;
   }
 }
 
@@ -747,8 +815,17 @@ body .news_catalogo div {
 }
 
 body .news_catalogo div a img {
-  height: 281px;
+  height: 221px;
   width: 393px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+@media (max-width: 768px) {
+  body .news_catalogo div a img {
+    height: 131px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -760,8 +837,8 @@ body .news_catalogo div a img {
 
 body .news_catalogo div div {
   margin-top: 30px;
-  height: 25px;
-  margin-bottom: 30px;
+  height: 60px;
+  margin-bottom: 100px;
 }
 
 body .news_catalogo div div h4 {
@@ -775,7 +852,7 @@ body .news_catalogo div div h4 {
 
 @media (max-width: 480px) {
   body .news_catalogo div div h4 {
-    width: 185px;
+    width: 171px;
   }
 }
 
@@ -789,9 +866,15 @@ body .news_catalogo div div p {
   height: 281px;
 }
 
+@media (max-width: 768px) {
+  body .news_catalogo div div p {
+    width: 233px;
+  }
+}
+
 @media (max-width: 480px) {
   body .news_catalogo div div p {
-    width: 185px;
+    width: 171px;
     height: 100%;
     font-size: 14px;
     font-weight: 1000;
@@ -829,6 +912,18 @@ body .antes_del_footer {
   }
 }
 
+@media (max-width: 768px) {
+  body .antes_del_footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 body .antes_del_footer div {
   margin: 30px 5px;
 }
@@ -836,6 +931,13 @@ body .antes_del_footer div {
 @media (max-width: 480px) {
   body .antes_del_footer div {
     margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body .antes_del_footer div {
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -849,6 +951,13 @@ body .antes_del_footer div img {
     height: 130px;
     width: 100%;
     margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body .antes_del_footer div img {
+    height: 288px;
+    width: 100%;
   }
 }
 
@@ -872,6 +981,19 @@ body .antes_del_footer .antes_del_footer1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body .antes_del_footer .antes_del_footer1 {
+    width: 100%;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -909,6 +1031,13 @@ body .antes_del_footer .antes_del_footer1 p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body .antes_del_footer .antes_del_footer1 p {
+    width: 300px;
+    margin: 15px 0 15px 0;
   }
 }
 
@@ -971,6 +1100,18 @@ body footer .footer_completo {
 }
 
 @media (max-width: 480px) {
+  body footer .footer_completo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
   body footer .footer_completo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1134,8 +1275,45 @@ body footer .footer_completo .footer2 {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  body footer .footer_completo .footer2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 480px) {
   body footer .footer_completo .footer2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  body footer .footer_completo .footer2 .footer_rep0 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-bottom: white;
+  }
+}
+
+@media (max-width: 480px) {
+  body footer .footer_completo .footer2 .footer_rep0 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1193,11 +1371,18 @@ body footer .footer_completo .footer2 .footer_icons {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 170px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body footer .footer_completo .footer2 .footer_icons {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
 }
 
 body footer .footer_completo .footer2 .footer_icons div {
-  margin-left: 20px;
+  text-align: center;
 }
 
 body footer .footer_completo .footer2 .footer_icons div h4 {
@@ -1224,13 +1409,20 @@ body footer .footer_completo .footer2 .footer_icons ul {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  body footer .footer_completo .footer2 .footer_icons ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 body footer .footer_completo .footer2 .footer_icons ul li {
   margin: 5px;
   list-style: none;
 }
 
 body footer .footer_completo .footer2 .footer_icons ul li i {
-  color: #808080;
+  color: #787878;
 }
 
 body footer .footer_final {
@@ -1320,7 +1512,7 @@ body footer .footer_final a:hover {
   background-position: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .pie_pagina_principal1 {
     background-image: url(https://cdn.marvel.com/content/1x/themarvels_lob_mas_min_mob_01.jpg);
     background-size: cover;
@@ -1341,7 +1533,7 @@ body footer .footer_final a:hover {
   opacity: 0.6;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .pie_pagina_principal1:before {
     height: 515px;
   }
@@ -1366,7 +1558,7 @@ body footer .footer_final a:hover {
   z-index: 1;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .pie_pagina_principal1 p {
     text-align: center;
   }
@@ -1379,6 +1571,15 @@ body footer .footer_final a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .catalogo_1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1411,7 +1612,7 @@ body footer .footer_final a:hover {
   margin-bottom: 50px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .catalogo_1 .movies {
     margin: 0;
     width: 100%;
@@ -1433,7 +1634,7 @@ body footer .footer_final a:hover {
   background-color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .catalogo_1 .movies a img {
     width: 160px;
     height: 230px;
@@ -1449,7 +1650,7 @@ body footer .footer_final a:hover {
   margin: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .catalogo_1 .movies div {
     width: 160px;
     height: 50px;
@@ -1465,7 +1666,7 @@ body footer .footer_final a:hover {
   height: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .catalogo_1 .movies div p {
     width: 100%;
     font-size: 10px;
@@ -1488,7 +1689,7 @@ body footer .footer_final a:hover {
   color: #d61c12;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .catalogo_1 .movies div h6 {
     padding: 0;
   }
@@ -1512,7 +1713,7 @@ body footer .footer_final a:hover {
   height: 400px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .img_disney {
     width: 100%;
   }
@@ -1522,7 +1723,7 @@ body footer .footer_final a:hover {
   margin-left: 100px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .img_disney div {
     margin: 0;
     text-align: center;
@@ -1577,7 +1778,7 @@ body footer .footer_final a:hover {
   margin-top: 30px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .things_part1 h2 {
     margin-left: 50px;
   }
@@ -1622,12 +1823,16 @@ body footer .footer_final a:hover {
           justify-content: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .things_part1 .new_things {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
 }
 
@@ -1642,6 +1847,16 @@ body footer .footer_final a:hover {
           flex-direction: column;
   color: black;
   height: 250px;
+}
+
+@media (max-width: 768px) {
+  .things_part1 .new_things div {
+    width: 280px;
+  }
+}
+
+.things_part1 .new_things div a {
+  width: 100%;
 }
 
 .things_part1 .new_things div a img {
@@ -1671,6 +1886,7 @@ body footer .footer_final a:hover {
   color: #514f4f;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  width: 100%;
 }
 
 .todas_las_movies {
@@ -1684,7 +1900,7 @@ body footer .footer_final a:hover {
   margin: 30px 100px 0 100px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .todas_las_movies {
     margin: 0;
   }
@@ -1748,14 +1964,21 @@ body footer .footer_final a:hover {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .todas_las_movies .t_movies {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media (max-width: 480px) {
   .todas_las_movies .t_movies {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    margin: 0;
-    padding: 5;
   }
 }
 
@@ -1776,7 +1999,7 @@ body footer .footer_final a:hover {
   margin: 15px 5px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .todas_las_movies .t_movies .tm_movies {
     margin: 0;
     -webkit-box-align: center;
@@ -1800,7 +2023,7 @@ body footer .footer_final a:hover {
           transform: translate(0rem, -1ex);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .todas_las_movies .t_movies .tm_movies a img {
     width: 169px;
     height: 206px;
@@ -1924,7 +2147,7 @@ body footer .footer_final a:hover {
   width: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .musica .musica_spotify {
     margin-left: 30px;
   }
@@ -1941,9 +2164,9 @@ body footer .footer_final a:hover {
   margin-top: 67px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .musica .musica_appl {
-    margin-top: 0;
+    margin-top: 75px;
     width: 100px;
     height: 302px;
     margin-bottom: 150px;
@@ -1976,7 +2199,7 @@ body footer .footer_final a:hover {
   background-position: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .pie_pagina_principal_2 {
     background-image: url(https://cdn.marvel.com/content/1x/marvelsspiderman2_lob_mas_min_mob_01.jpg);
     background-size: cover;
@@ -2036,6 +2259,16 @@ body footer .footer_final a:hover {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .catalogo_2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+}
+
 @media (max-width: 480px) {
   .catalogo_2 {
     display: -ms-grid;
@@ -2057,7 +2290,7 @@ body footer .footer_final a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   color: black;
-  height: 290px;
+  height: 320px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2066,7 +2299,7 @@ body footer .footer_final a:hover {
   margin-bottom: 50px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .catalogo_2 .games {
     margin: 0;
     width: 100%;
@@ -2097,11 +2330,11 @@ body footer .footer_final a:hover {
   }
 }
 
-.catalogo_2 .games:hover {
-  color: #d61c12;
+.catalogo_2 .games div {
+  margin: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .catalogo_2 .games div {
     width: 160px;
     height: 50px;
@@ -2109,13 +2342,15 @@ body footer .footer_final a:hover {
 }
 
 .catalogo_2 .games div p {
-  margin: 0;
   font-weight: 800;
   font-size: 13px;
-  width: 186px;
+  margin-top: 2px;
+  margin-left: 15px;
+  width: 170px;
+  height: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .catalogo_2 .games div p {
     width: 100%;
     font-size: 10px;
@@ -2124,12 +2359,21 @@ body footer .footer_final a:hover {
 }
 
 .catalogo_2 .games div h6 {
-  margin: 0;
+  margin-top: 15px;
+  padding: 10px;
+  margin-left: 5px;
   font-size: 15px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   color: #514f4f;
 }
 
-@media (max-width: 480px) {
+.catalogo_2 .games div h6:hover {
+  color: #d61c12;
+}
+
+@media (max-width: 768px) {
   .catalogo_2 .games div h6 {
     padding: 0;
   }
@@ -2204,6 +2448,15 @@ body footer .footer_final a:hover {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .todas_los_games .t_games {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 480px) {
   .todas_los_games .t_games {
     display: -ms-grid;
@@ -2252,6 +2505,13 @@ body footer .footer_final a:hover {
 .todas_los_games .t_games .tm_games a img:hover {
   -webkit-transform: translate(0rem, -1ex);
           transform: translate(0rem, -1ex);
+}
+
+@media (max-width: 768px) {
+  .todas_los_games .t_games .tm_games a img {
+    width: 198px;
+    height: 333px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2318,7 +2578,7 @@ body footer .footer_final a:hover {
           box-shadow: #26394d 0px 20px 30px -10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contactos .formulario_img {
     width: 400px;
   }
@@ -2412,7 +2672,7 @@ body footer .footer_final a:hover {
 }
 
 .comics .comics_titulo h3:after {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 15px;
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
@@ -2426,7 +2686,13 @@ body footer .footer_final a:hover {
   width: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .comics .comics_titulo h3:after {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
   .comics .comics_titulo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2472,6 +2738,13 @@ body footer .footer_final a:hover {
           transform: translate(0rem, -1ex);
 }
 
+@media (max-width: 768px) {
+  .comics .comics_Contenedor .comics_caja a img {
+    width: 168px;
+    height: 252px;
+  }
+}
+
 @media (max-width: 480px) {
   .comics .comics_Contenedor .comics_caja a img {
     width: 192px;
@@ -2482,6 +2755,12 @@ body footer .footer_final a:hover {
 .comics .comics_Contenedor .comics_caja div {
   width: 224px;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .comics .comics_Contenedor .comics_caja div {
+    width: 168px;
+  }
 }
 
 .comics .comics_Contenedor .comics_caja div h2 {
@@ -2517,6 +2796,12 @@ body footer .footer_final a:hover {
   color: red;
 }
 
+@media (max-width: 768px) {
+  .comics .comics_Contenedor .comics_caja div {
+    width: 168px;
+  }
+}
+
 @media (max-width: 480px) {
   .comics .comics_Contenedor .comics_caja div {
     width: 192px;
@@ -2536,13 +2821,6 @@ body footer .footer_final a:hover {
 .comics .comics_Contenedor .comics_caja_ultimo a img:hover {
   -webkit-transform: translate(0rem, -1ex);
           transform: translate(0rem, -1ex);
-}
-
-@media (max-width: 480px) {
-  .comics .comics_Contenedor .comics_caja_ultimo a img {
-    width: 192px;
-    height: 288px;
-  }
 }
 
 .comics .comics_Contenedor .comics_caja_ultimo div {
@@ -2578,7 +2856,7 @@ body footer .footer_final a:hover {
   color: red;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .comics .comics_Contenedor .comics_caja_ultimo {
     display: none;
   }
@@ -2630,7 +2908,7 @@ body footer .footer_final a:hover {
   width: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .comics h3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2683,7 +2961,7 @@ body footer .footer_final a:hover {
   color: red;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .comics #carouselExampleControls {
     display: none;
   }
@@ -2693,7 +2971,7 @@ body footer .footer_final a:hover {
   display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .comics .comics_mv {
     display: -webkit-box;
     display: -ms-flexbox;
